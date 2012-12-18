@@ -116,4 +116,4 @@
 
 (defn status
   "Return server status."
-  [] (:values @pimp))
+  [] (or (:values @pimp) {}))

@@ -29,9 +29,9 @@
        [:div#song "Song"]
        [:div#artist "Artist"]]]
      [:div#buttons
-      [:div#upvote.button [:img {:src "img/upvote.svg"}]]
-      [:div#veto.button [:img {:src "img/veto.svg"}]]
-      [:div#downvote.button [:img {:src "img/downvote.svg"}]]]]
+      [:img#upvote.button {:src "img/upvote.png"}]
+      [:img#veto.button {:src "img/veto.png"}]
+      [:img#downvote.button {:src "img/downvote.png"}]]]
     [:script {:src "js/pimp.js"}]]])
 
 (defroutes app-routes
