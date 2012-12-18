@@ -98,14 +98,22 @@
                    .run))))
          (send-off pimp))))
 
-(defn upvote
+(defn request!
+  "Request particular song."
+  [item] (invoke :request item))
+
+(defn upvote!
   "Upvote current song."
   [] (invoke :upvote "song"))
 
-(defn downvote
+(defn downvote!
   "Downvote current song."
   [] (invoke :downvote "song"))
 
-(defn veto
+(defn veto!
   "Veto current song."
   [] (invoke :veto))
+
+(defn status
+  "Return server status."
+  [] (:values @pimp))

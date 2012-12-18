@@ -9,3 +9,6 @@ pom.xml
 .lein-failures
 .lein-plugins
 *.log
+/.lein-cljsbuild*
+/out
+/resources/public/js/pimp.js
